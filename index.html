@@ -39,7 +39,7 @@
             a{text-decoration:none !important;}
             p {margin: 0px 0px !important;}
             .header-mobile-link,.header-mobile-link a{color:#FFFFFF !important;text-decoration:none !important;}
-            .footer-mobile-link,.footer-mobile-link a{color:#454545 !important;text-decoration:none !important;}
+            .footer-mobile-link,.footer-mobile-link a{color:#ffffff !important;text-decoration:none !important;}
             .main-color,.main-color a,.footer-links a,.text a,.h1 a,.h2 a{text-decoration:none !important;}
 			ol, ul, li {
 				list-style: outside none none !important;
@@ -47,15 +47,18 @@
 			#module-list li {
 				position: relative;
 			}
-			#module-list{padding:0;}
+			#module-list{
+                padding:0;
+                margin-block-end: 0;
+            }
             /* ====== Mobile Styles Bring inline: No ====== */
-            @media only screen and (max-width: 640px) {
+            @media only screen and (max-width: 550px) {
             table[class="container"] {width: 440px!important;text-align:center!important;}
             table[class="innercontainer"] {width: 420px!important;text-align:center!important;}
             td[class="centercontainer"],table[class="centercontainer"]{width:100% !important;text-align:center !important;clear:both;}
             td[class="split"]{width: 100% !important;padding-right: 0px !important;padding-left: 0px !important;display: block !important;text-align:center !important;}
             td[class="split1"]{width: 100% !important;padding-right: 0px !important;padding-left: 0px !important;display: block !important;}
-            img[class="banner"] {width:305px !important;height:auto!important;}
+            img[class="banner"] {width:250px !important;height:auto!important;}
             td[class="hide"],img[class="hide"]{display:none !important;}
             td[class="padding-20"]{padding-top:20px;padding-bottom:20px;}
             td[class="padding-30"]{padding-top:30px;}
@@ -83,6 +86,7 @@
 
         body{
             font-family: 'Montserrat', sans-serif;
+            margin: 0;
         }
         h1,h2,h3,h4,h5,h6{
             font-family: 'Playfair Display', serif;
@@ -97,7 +101,7 @@
          background: #ffffff;
          }
          .bg_light{
-         background: #fafafa;
+         background: #2f2f2f;
          }
          .bg_black{
          background: #000000;
@@ -130,7 +134,7 @@
          font-size: 13px;
          text-transform: uppercase;
          letter-spacing: 2px;
-         color: rgba(0,0,0,.4);
+         color: #ffffff;
          position: relative;
          }
          .heading-section .subheading::after{
@@ -141,7 +145,7 @@
          content: '';
          width: 100%;
          height: 2px;
-         background: #fe8d87;
+         background: #66cdea;
          margin: 0 auto;
          }
          .heading-section-white{
@@ -152,25 +156,22 @@
          line-height: 1;
          padding-bottom: 0;
          }
-         .heading-section-white h2{
+        .heading-section-white h2{
          color: #ffffff;
          }
-         .heading-section-white .subheading{
-         margin-bottom: 0;
-         display: inline-block;
-         font-size: 13px;
-         text-transform: uppercase;
-         letter-spacing: 2px;
-         color: rgba(255,255,255,.4);
+        .heading-section-white .subheading{
+            margin-bottom: 0;
+            display: inline-block;
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: rgba(255,255,255,.4);
          }
 
 
 
 
-
-
-
-         p{
+        p{
              color: #9B9B9B;
              font-family: 'proxima_nova_rgregular', Helvetica, Arial, sans-serif;
              font-weight: 100;
@@ -182,9 +183,6 @@
 
 
 
-
-
-
         .glp-row{
             display: table-row;
         }
@@ -192,6 +190,18 @@
             width: 50%;
         }
         
+        
+
+            .cont-about{
+                background-image: url("images/about-bg2.png");
+                background-repeat:no-repeat;
+                object-fit: cover;
+                background-size: cover;
+            }
+            .glps{
+                font-weight: 700;
+            }
+
             @media screen and (max-width: 500px) {
 
                 .icon{
@@ -214,6 +224,9 @@
                 .glp-cell{
                     width: 90%;
                     margin-left: 5%;
+                }
+                .imag{
+                    height: 200px;
                 }
             }
 
@@ -245,7 +258,7 @@
                                 </div>
                             </div>
                             <!-- ======= Top Banner Module ====== -->
-                            <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0" background="images/animate.gif" class="change_bg" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;background-image: url(images/animate.gif);background-repeat: no-repeat; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;background-position: top center;" bgcolor="#251f2c">
+                            <table width="600px" align="center" border="0" cellspacing="0" cellpadding="0" background="images/animate.gif" class="change_bg" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;background-image: url(images/animate.gif);background-repeat: no-repeat; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;background-position: top center;" bgcolor="#251f2c">
                                 <tbody><tr>
                                     <td align="center" valign="top" style="background-image: url(images/animate.gif);">
                                         <!--[if gte mso 9]>
@@ -286,7 +299,7 @@
                                                                     <td align="center" valign="top">
                                                                         <table align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;" class="container">
                                                                             <tbody><tr>
-                                                                                <td width="305" align="center" valign="top"><a href="#" class="image_modal_edit"><img mc:edit="timer_img" editable="true" src="images/finallogo.png" width="250px" alt="" class="banner" border="0" style="display:block"></a></td>
+                                                                                <td width="305" align="center" valign="top"><a href="#" class="image_modal_edit"><img mc:edit="timer_img" editable="true" src="images/new-logo-wb.png" width="250px" alt="" class="banner" border="0" style="display:block"></a></td>
                                                                             </tr>
                                                                         </tbody></table>
                                                                     </td>
@@ -294,7 +307,7 @@
                                                                 <!-- time animated gif ends -->
                                                                 <tr>
                                                                     <td mc:edit="event_title" align="center" valign="top" style="color: #FFFFFF;font-family: 'proxima_nova_rgbold', Arial, Helvetica, sans-serif;font-size: 34px;font-weight:700;line-height: 44px;letter-spacing:3px;text-align:center;text-transform:uppercase;padding-bottom: 10px;padding-top: 30px;" id="animate1">
-                                                                        <div class="sim-row-edit" data-type="title"><multiline><span class="main-color" style="color: #FE8D87;">Effervescence'21</span></multiline></div>
+                                                                        <div class="sim-row-edit" data-type="title"><multiline><span class="main-color" style="color: #66cdea;">Effervescence'21</span></multiline></div>
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -317,7 +330,7 @@
                             </table>
                             <!-- ======= Top Banner Module Ends ====== -->
                         </li>
-
+                        
 
                         <!---------------------------------------------------------- ABOUT US -------------------------------------------------------------------->
 
@@ -334,7 +347,7 @@
                             <tbody>
                                 <tr>
                                 <td align="center" valign="top">
-                                    <table width="600" align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;" class="container">
+                                    <table width="600" align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;" class="container cont-about">
                                         <tbody><tr>
                                             <td align="center">
                                                 <table width="580" align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;" class="container">
@@ -342,7 +355,7 @@
                                                         <td align="center" valign="top" height="50" style="font-size:0px; line-height:0px; mso-line-height-rule: exactly;">&nbsp;</td>
                                                     </tr>
                                                     <tr>
-                                                        <td mc:edit="heading1" align="center" style="font-family: 'proxima_nova_rgbold', Arial, Helvetica, sans-serif;font-size: 18px;font-weight:700;text-align: center;text-transform: uppercase;padding-bottom: 8px;line-height: 26px;color: #454545;" class="h1">
+                                                        <td mc:edit="heading1" align="center" style="font-family: 'proxima_nova_rgbold', Arial, Helvetica, sans-serif;font-size: 18px;font-weight:700;text-align: center;text-transform: uppercase;padding-bottom: 8px;line-height: 26px;color: #ffffff;" class="h1">
                                                             <div class="sim-row-edit" data-type="title"><multiline>About event</multiline></div>
                                                         </td>
                                                     </tr>
@@ -350,13 +363,13 @@
                                                         <td align="center">
                                                             <table width="25" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
                                                                 <tbody><tr>
-                                                                    <td width="25" height="3" style="font-size: 0px;line-height: 0px;border-bottom: 3px solid #454545;" class="underline"></td>
+                                                                    <td width="25" height="3" style="font-size: 0px;line-height: 0px;border-bottom: 3px solid #66cdea;" class="underline"></td>
                                                                 </tr>
                                                             </tbody></table>
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <td mc:edit="aem-des" align="center" style="font-family: 'proxima_nova_rgregular', Helvetica, Arial, sans-serif;font-size: 14px;text-align: center;line-height: 24px;padding-top: 15px;padding-left: 30px;padding-right: 30px;color: #9B9B9B;" class="text">
+                                                        <td mc:edit="aem-des" align="center" style="font-family: 'proxima_nova_rgregular', Helvetica, Arial, sans-serif;font-size: 14px;text-align: center;line-height: 24px;padding-top: 15px;padding-left: 30px;padding-right: 30px;color: #ffffff;" class="text">
                                                             <!--[if gte mso 9]>
                                                             <span style="font-size:13px;">
                                                                 <![endif]--><div class="sim-row-edit" data-type="title"><multiline label="eventdescription">Effervescence is the annual cultural festival of IIIT Allahabad, an Institute of national importance established by the HRD Ministry, Govt. Of India. At Effervescence, We believe that while the academic achievements are important, the cultural activities foster the real spirit of kinship and skills for sublime social existence, thereby promoting the overall development of an individual. Over the years, the fest has risen to great standards - its popularity ramped up, reach extended far and wide to national circuits, and its name became a by-word for a grand celebration. The fest garners a total footfall of about 21k, with participants from over 150 colleges of the country. Our online events have been a real eye-opener, with participation from over 25 countries.</multiline></div><!--[if gte mso 9]>
@@ -366,21 +379,18 @@
                                                     </tr>  		
                                                                                                             
                                                     <tr>
-                                                        <td align="center" valign="top" style="padding-top:30px;padding-bottom:60px;">
+                                                        <td align="center" valign="top" style="padding-top:30px;padding-bottom:40px;">
                                                             <!-- button -->
                                                             <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
                                                                 <tbody><tr>
-                                                                    <td mc:edit="button_l" align="center" valign="middle" style="color: #FFFFFF;padding-left: 25px;padding-right: 25px;padding-top:12px;padding-bottom:12px;border-radius: 4px;background-color: #FE8D87;text-transform:uppercase;font-weight:400;font-family: 'proxima_nova_rgregular', Arial, sans-serif;" class="main-bg-color">
-                                                                        <multiline><a class="sim-row-edit" data-type="link" href="https://www.facebook.com/effervescence.iiita/" style="color: #FFFFFF;text-align: center;text-decoration: none;-webkit-text-size-adjust: none;font-size: 14px;">Know More</a></multiline>
+                                                                    <td mc:edit="button_l" align="center" valign="middle" style="color: #FFFFFF;padding-left: 25px;padding-right: 25px;padding-top:12px;padding-bottom:12px;border-radius: 4px;background-color: #66cdea;text-transform:uppercase;font-weight:400;font-family: 'proxima_nova_rgregular', Arial, sans-serif;" class="main-bg-color">
+                                                                        <multiline><a class="sim-row-edit" data-type="link" href="https://www.facebook.com/effervescence.iiita/" style="color: #2f2f2f;text-align: center;font-weight:600;text-decoration: none;-webkit-text-size-adjust: none;font-size: 14px;">Know More</a></multiline>
                                                                     </td>
                                                                 </tr>
                                                             </tbody></table>
                                                             <!-- button ends -->
                                                         </td>
                                                     </tr>										
-                                                    <tr>
-                                                        <td align="center" valign="top" height="60" style="font-size:0px; line-height:0px; mso-line-height-rule: exactly;">&nbsp;</td>
-                                                    </tr>
                                                 </tbody></table>
                                             </td>
                                         </tr>
@@ -412,13 +422,13 @@
                                       </tr> -->
                        
                                          <tr>
-                                            <td class="bg_white">
+                                            <td class="bg_white" style="background: #66cdea;">
                                                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                                                
                                                   <tr>
                                                         <td class="bg_white email-section">
-                                                           <div class="heading-section" style="text-align: center; padding: 0 30px;">
-                                                              <span class="subheading">Glimpses</span>
+                                                           <div class="heading-section glps" style="text-align: center; padding: 0 30px;">
+                                                              <span class="subheading glps" style="font-size:1.5rem;font-weight: 600;color:#2f2f2f">Glimpses</span>
                                                            </div>
                                                         </td>
                                                   </tr>
@@ -433,8 +443,8 @@
                                                                           <td class="text-services" style="text-align: left; padding: 20px 30px;">
                                                                              <div class="heading-section">
                                                                                 
-                                                                                <span class="subheading">When Chai met Toast:</span>
-                                                                                <p>Effervescence is a host to a wide variety of events, pertaining to various genres of entertainment, ensuring that every individual enjoys the three days of extravaganza. Every year, we try to go an extra mile to make sure that these days leave an indelible impression for a lifetime.</p>
+                                                                                <span class="subheading">Mariana Bo</span>
+                                                                                <p>Rock & Rave on. Staging and recreation concurrently. Spectacular night to take a trip down memory lane. Contended and obliged to be part of jollification of such a sort.</p>
                                                                              
                                                                              </div>
                                                                           </td>
@@ -444,7 +454,7 @@
                                                                  <td valign="middle" class="glp-cell">
                                                                     <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                                                                        <tr>
-                                                                          <td>
+                                                                          <td  class="imag" >
                                                                              <img src="https://github.com/thesmallstar/effe-email/blob/master/images/neetim.jpg?raw=true" alt="Neeti Mohan" style="width: 100%; max-width: 600px; height: auto; margin: auto; display: block;">
                                                                           </td>
                                                                        </tr>
@@ -461,8 +471,8 @@
                                                                  <td valign="middle" class="glp-cell">
                                                                     <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                                                                        <tr>
-                                                                          <td>
-                                                                             <img src="https://github.com/thesmallstar/effe-email/blob/master/images/ritviz.jpg?raw=true" alt="Ritviz" style="width: 100%; max-width: 600px; height: 300px; margin: auto; display: block;">
+                                                                          <td class= "imag">
+                                                                             <img  src="https://github.com/thesmallstar/effe-email/blob/master/images/ritviz.jpg?raw=true" alt="Ritviz" style="width: 100%; max-width: 600px; height: 300px; margin: auto; display: block;">
                                                                           </td>
                                                                        </tr>
                                                                     </table>
@@ -473,8 +483,8 @@
                                                                           <td class="text-services" style="text-align: left; padding: 20px 30px;">
                                                                              <div class="heading-section">
                                                                                 
-                                                                                <span class="subheading">When Chai met Toast:</span>
-                                                                                <p>	The success of a fest is highly dependent on the performances put forth by the performers, and we have surely witnessed spectacular shows</p>
+                                                                                <span class="subheading">Vishal Mishra</span>
+                                                                                <p>An euphonious and heavenly evening. Vishal Mishra prominent for his heartfelt melody , enlightened the audience with his odyssey and preformed a handful number of his eminent songs.</p>
                                                                           
                                                                              </div>
                                                                           </td>
@@ -494,7 +504,7 @@
                                                                        <tr>
                                                                           <td class="text-services" style="text-align: left; padding: 20px 30px;">
                                                                              <div class="heading-section">
-                                                                                <span class="subheading">When Chai met Toast:</span>
+                                                                                <span class="subheading">Neeti Mohan</span>
                                                                              
                                                                                 <p>"Performance and enjoyment at the same time, cheerful people, great crowd and the earniest host have made it one of our favourites. A resounding experience for us."</p>
                                                                              </div>
@@ -506,7 +516,7 @@
                                                                     <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                                                                        <tr>
                                                                           <td>
-                                                                             <img src="https://github.com/thesmallstar/effe-email/blob/master/images/chai.jpg?raw=true" alt="When Chai Met Toast" style="width: 100%; max-width: 600px; height: 300px; margin: auto; display: block; object-fit: cover;">
+                                                                            <img class="imag" src="https://github.com/thesmallstar/effe-email/blob/master/images/neetim.jpg?raw=true" alt="Neeti Mohan" style="width: 100%; max-width: 600px; height: auto; margin: auto; display: block;">
                                                                           </td>
                                                                        </tr>
                                                                     </table>
@@ -523,7 +533,7 @@
                                                                     <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                                                                        <tr>
                                                                           <td>
-                                                                             <img src="https://github.com/thesmallstar/effe-email/blob/master/images/sunil.jpeg?raw=true" alt="Sunil Jogi" style="width: 100%; max-width: 600px; height: 300px; margin: auto; display: block;">
+                                                                            <img class="imag" src="https://github.com/thesmallstar/effe-email/blob/master/images/ritviz.jpg?raw=true" alt="Ritviz" style="width: 100%; max-width: 600px; height: 300px; margin: auto; display: block;">
                                                                           </td>
                                                                        </tr>
                                                                     </table>
@@ -533,7 +543,7 @@
                                                                        <tr>
                                                                           <td class="text-services" style="text-align: left; padding: 20px 30px;">
                                                                              <div class="heading-section">
-                                                                                <span class="subheading">Sunil Jogi</span>
+                                                                                <span class="subheading">Ritviz</span>
                                                                                 <p>"Sublime crowd, patient listeners and a great night to remember. The organizers have taken a huge responsibility in making the fest grand and a successful story. Happy to be a part of a celebration of such a kind."</p>
                                                                              </div>
                                                                           </td>
@@ -574,10 +584,10 @@
                                     </div>
                                 </div>
                             <!-- ======= Workshops 3 Column Module ====== -->
-                            <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;background-color: #FFFFFF;" class="bg-color1">
+                            <table width="40%" border="0" cellpadding="0" cellspacing="0" align="center" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;background-color: #ffffff;" class="bg-color1">
                                 <tbody><tr>
                                     <td>
-                                        <table width="600" align="center" border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;" class="container">
+                                        <table width="600" align="center" border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;bac" class="container">
                                             <tbody><tr>
                                                 <td align="center">
                                                     <table width="580" align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;" class="container">
@@ -585,15 +595,15 @@
                                                             <td align="center" valign="top" height="50" style="font-size:0px; line-height:0px; mso-line-height-rule: exactly;">&nbsp;</td>
                                                         </tr>
                                                         <tr>
-                                                            <td mc:edit="heading4" align="center" style="font-family: 'proxima_nova_rgbold', Arial, Helvetica, sans-serif;font-size: 18px;font-weight:700;text-transform: uppercase;padding-bottom: 8px;line-height: 26px;color: #454545;" class="h1">
+                                                            <td mc:edit="heading4" align="center" style="font-family: 'proxima_nova_rgbold', Arial, Helvetica, sans-serif;font-size: 1.5rem;font-weight:700;text-transform: uppercase;padding-bottom: 8px;line-height: 26px;color: #454545;" class="h1">
                                                                 <div class="sim-row-edit" data-type="title"><multiline>BENEFITS</multiline></div>
                                                             </td>
                                                         </tr>
                                                         <tr>
                                                             <td align="center">
-                                                                <table width="25" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+                                                                <table width="120" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
                                                                     <tbody><tr>
-                                                                        <td width="25" height="3" style="font-size: 0px;line-height: 0px;border-bottom: 3px solid #454545;" class="underline"></td>
+                                                                        <td width="25" height="0" style="font-size: 0px;line-height: 0px;border-bottom: 3px solid #66cdea;" class="underline"></td>
                                                                     </tr>
                                                                 </tbody></table>
                                                             </td>
@@ -603,10 +613,10 @@
                                                         </tr>
                                                         <tr>
                                                             <td align="center" valign="top" width="100%">
-                                                                <table width="580" align="left" border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-spacing: 0;padding: 0;" class="container">
+                                                                <table width="60" align="left" border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-spacing: 0;padding: 0;" class="container">
                                                                     <tbody><tr>
                                                                         <td class="split" valign="top">
-                                                                            <table width="186" bgcolor="#F7F7F7" align="left" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;border-radius:5px;border-spacing: 0;padding: 0;" class="container">
+                                                                            <table width="186" bgcolor="#F7F7F7" align="center" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;border-radius:5px;border-spacing: 0;padding: 0;" class="container">
                                                                                 <tbody>
                                                                                 <tr>
                                                                                     <td align="center" valign="top" height="30" style="font-size:0px; line-height:0px; mso-line-height-rule: exactly;">&nbsp;</td>
@@ -618,7 +628,7 @@
 
 
                                                                                                 <!---------------------------------------------- SPACE FOR IMAGE ------------------------------------------->
-                                                                                            
+                                                                                                <img src="images/reach.png" style="width:80px">
                                                                                             
                                                                                             
                                                                                             </tbody>
@@ -629,7 +639,7 @@
                                                                                     <td align="center" valign="top" height="25" style="font-size:0px; line-height:0px; mso-line-height-rule: exactly;">&nbsp;</td>
                                                                                 </tr>
                                                                                 <tr>
-                                                                                    <td mc:edit="w3ct1" width="100%" style="text-align: center;font-family: 'proxima_nova_rgregular',Helvetica,Arial,sans-serif;font-size: 18px;line-height: 24px;padding-left: 15px;padding-right: 15px;color: #454545;" class="h2">
+                                                                                    <td mc:edit="w3ct1" width="100%" style="text-align: center;font-family: 'proxima_nova_rgregular',Helvetica,Arial,sans-serif;font-size: 18px;line-height: 24px;font-weight:600;padding-left: 15px;padding-right: 15px;color: #454545;" class="h2">
                                                                                         <div class="sim-row-edit" data-type="title"><multiline>Pan India Reach</multiline></div>	
                                                                                     </td>
                                                                                 </tr>
@@ -643,13 +653,13 @@
                                                                                     </td>
                                                                                 </tr>
                                                                                 <tr>
-                                                                                    <td align="center" valign="top" height="20" style="font-size: 0px;line-height: 0px;mso-line-height-rule: exactly;border-bottom-left-radius: 6px;border-bottom-right-radius: 6px;background-color: #FE8D87;" class="main-bg-color">&nbsp;</td>
+                                                                                    <td align="center" valign="top" height="20" style="font-size: 0px;line-height: 0px;mso-line-height-rule: exactly;border-bottom-left-radius: 6px;border-bottom-right-radius: 6px;background-color: #2f2f2f;" class="main-bg-color">&nbsp;</td>
                                                                                 </tr>
                                                                             </tbody></table>
                                                                         </td>
                                                                         <td class="split">
                                                                             <!-- Space -->
-                                                                            <table width="25" align="left" cellspacing="0" cellpadding="0" border="0" class="container" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-spacing: 0;padding: 0;">
+                                                                            <table width="10" align="left" cellspacing="0" cellpadding="0" border="0" class="container" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-spacing: 0;padding: 0;">
                                                                                 <tbody><tr>
                                                                                     <td width="100%" height="45" style="font-size:0;line-height:0;">
                                                                                     </td>
@@ -668,7 +678,7 @@
 
 
                                                                                                 <!---------------------------------------------- SPACE FOR IMAGE ------------------------------------------->
-                                                                                            
+                                                                                                <img src="images/Group_P.png" style="width:75px">
                                                                                             
                                                                                             
                                                                                             </tbody>
@@ -679,7 +689,7 @@
                                                                                     <td align="center" valign="top" height="25" style="font-size:0px; line-height:0px; mso-line-height-rule: exactly;">&nbsp;</td>
                                                                                 </tr>
                                                                                 <tr>
-                                                                                    <td mc:edit="w3ct2" width="100%" style="text-align: center;font-family: 'proxima_nova_rgregular',Helvetica,Arial,sans-serif;font-size: 18px;line-height: 24px;padding-left: 15px;padding-right: 15px;color: #454545;" class="h2">
+                                                                                    <td mc:edit="w3ct2" width="100%" style="text-align: center;font-family: 'proxima_nova_rgregular',Helvetica,Arial,sans-serif;font-size: 18px;font-weight:600;line-height: 24px;padding-left: 15px;padding-right: 15px;color: #454545;" class="h2">
                                                                                         <div class="sim-row-edit" data-type="title"><multiline>Growing Popularity</multiline><div> 	
                                                                                     </div></div></td>
                                                                                 </tr>
@@ -687,20 +697,20 @@
                                                                                     <td mc:edit="w3cde2" width="100%" style="text-align: center;font-family: 'proxima_nova_rgregular',Helvetica,Arial,sans-serif;font-size: 14px;line-height: 24px;padding-left: 15px;padding-right: 15px;padding-top: 12px;padding-bottom: 25px;color: #9B9B9B;" class="text">
                                                                                         <!--[if gte mso 9]>
                                                                                         <span style="font-size:13px;">
-                                                                                            <![endif]--><div class="sim-row-edit" data-type="title"><multiline>Effervescence 2019 was a phenomenal success with footfalls exceeding 21,000, witnessing participation from all over India.</multiline></div><!--[if gte mso 9]>
+                                                                                            <![endif]--><div class="sim-row-edit" data-type="title"><multiline>Effervescence 2020 was a phenomenal success with footfalls exceeding 21,000, witnessing participation from all over India.</multiline></div><!--[if gte mso 9]>
                                                                                         </span>
                                                                                         <![endif]--> 
                                                                                     </td>
                                                                                 </tr>
                                                                                 
                                                                                 <tr>
-                                                                                    <td align="center" valign="top" height="20" style="font-size: 0px;line-height: 0px;mso-line-height-rule: exactly;border-bottom-left-radius: 6px;border-bottom-right-radius: 6px;background-color: #FE8D87;" class="main-bg-color">&nbsp;</td>
+                                                                                    <td align="center" valign="top" height="20" style="font-size: 0px;line-height: 0px;mso-line-height-rule: exactly;border-bottom-left-radius: 6px;border-bottom-right-radius: 6px;background-color: #2f2f2f;" class="main-bg-color">&nbsp;</td>
                                                                                 </tr>
                                                                             </tbody></table>
                                                                         </td>
                                                                         <td class="split">
                                                                             <!-- Space -->
-                                                                            <table width="25" align="left" cellspacing="0" cellpadding="0" border="0" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-spacing: 0;padding: 0;" class="container">
+                                                                            <table width="10" align="left" cellspacing="0" cellpadding="0" border="0" class="container" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-spacing: 0;padding: 0;">
                                                                                 <tbody><tr>
                                                                                     <td width="100%" height="45" style="font-size:0;line-height:0;">
                                                                                     </td>
@@ -717,9 +727,9 @@
                                                                                         <table width="102" height="50" border="0" align="center" cellspacing="0" cellpadding="0" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-radius: 4px; border-spacing: 0;padding: 0;">
                                                                                             <tbody>
 
-
+                                                                                                
                                                                                                 <!---------------------------------------------- SPACE FOR IMAGE ------------------------------------------->
-                                                                                            
+                                                                                                <img src="images/excel.png" style="width:80px">
                                                                                             
                                                                                             
                                                                                             </tbody>
@@ -730,7 +740,7 @@
                                                                                     <td align="center" valign="top" height="25" style="font-size:0px; line-height:0px; mso-line-height-rule: exactly;">&nbsp;</td>
                                                                                 </tr>
                                                                                 <tr>
-                                                                                    <td mc:edit="w3ct3" width="100%" style="text-align: center;font-family: 'proxima_nova_rgregular',Helvetica,Arial,sans-serif;font-size: 18px;line-height: 24px;padding-left: 15px;padding-right: 15px;color: #454545;" class="h2">
+                                                                                    <td mc:edit="w3ct3" width="100%" style="text-align: center;font-family: 'proxima_nova_rgregular',Helvetica,Arial,sans-serif;font-size: 18px;line-height: 24px;font-weight:600;padding-left: 15px;padding-right: 15px;color: #454545;" class="h2">
                                                                                         <div class="sim-row-edit" data-type="title"><multiline>Affordable excellence</multiline></div>	
                                                                                     </td>
                                                                                 </tr>
@@ -744,7 +754,7 @@
                                                                                     </td>
                                                                                 </tr>
                                                                                 <tr>
-                                                                                    <td align="center" valign="top" height="20" style="font-size: 0px;line-height: 0px;mso-line-height-rule: exactly;border-bottom-left-radius: 6px;border-bottom-right-radius: 6px;background-color: #FE8D87;" class="main-bg-color">&nbsp;</td>
+                                                                                    <td align="center" valign="top" height="20" style="font-size: 0px;line-height: 0px;mso-line-height-rule: exactly;border-bottom-left-radius: 6px;border-bottom-right-radius: 6px;background-color: #2f2f2f;" class="main-bg-color">&nbsp;</td>
                                                                                 </tr>
                                                                             </tbody></table>
                                                                         </td>
@@ -776,7 +786,7 @@
                                     </div>
                             </div>
                             <!-- ======= Footer starts ====== -->
-                            <table width="100%" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;background-color: #eeeeee;">
+                            <table width="600" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;background-color: #191919;">
                                 <tbody>
                                     <tr>
                                     <td>
@@ -793,9 +803,9 @@
                                                                         <tbody><tr>
                                                                             <td width="49%" valign="top" class="split">
                                                                             <!-- left column -->
-                                                                                <table align="left" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+                                                                                <table align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
                                                                                     <tbody><tr>
-                                                                                        <td mc:edit="footer_t1" style="font-family: 'proxima_novasemibold', Arial, helvetica, sans-serif;font-size: 18px;font-weight:600;text-align: left !important;color: #454545;" class="h2">
+                                                                                        <td mc:edit="footer_t1" style="font-family: 'proxima_novasemibold', Arial, helvetica, sans-serif;font-size: 18px;font-weight:600;text-align: left !important;color: #d2d2d2;" class="h2">
                                                                                             <div class="sim-row-edit" data-type="title"><multiline>Address</multiline></div>
                                                                                         </td>
                                                                                     </tr>
@@ -817,9 +827,9 @@
                                                       
                                                                             <td width="49%" valign="top" class="split">	
                                                                                 <!-- start of right column -->
-                                                                                <table align="left" border="0" cellpadding="0" cellspacing="0" class="innercontainer" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+                                                                                <table align="center" border="0" cellpadding="0" cellspacing="0" class="innercontainer" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
                                                                                     <tbody><tr>
-                                                                                        <td mc:edit="footer_t2" style="font-family: 'proxima_novasemibold', Arial, helvetica, sans-serif;font-size: 18px;font-weight:600;text-align: left !important;color: #454545;" class="h2">
+                                                                                        <td mc:edit="footer_t2" style="font-family: 'proxima_novasemibold', Arial, helvetica, sans-serif;font-size: 18px;font-weight:600;text-align: left !important;color: #d2d2d2;" class="h2">
                                                                                             <div class="sim-row-edit" data-type="title"><multiline>Contact Us</multiline></div>
                                                                                         </td>
                                                                                     </tr>
@@ -840,19 +850,19 @@
                                                                                                 <tbody>
                                                                                                     <tr>
                                                                                                     <td align="center" valign="middle" width="30" height="30" style="font-size: 0;line-height: 0;border-radius: 100%;" class="main-bg-color"></td>
-                                                                                                        <a class="image_modal_edit" href="https://www.facebook.com/effervescence.iiita/" target="_blank" style="color: #181616;text-decoration: none!important;font-size: 2rem;padding: 2px;">
+                                                                                                        <a class="image_modal_edit" href="https://www.facebook.com/effervescence.iiita/" target="_blank" style="color: #ffffff;text-decoration: none!important;font-size: 2rem;padding: 2px;">
                                                                                                             <i class="fab fa-facebook"></i></a>
                                                                                                     <td width="15" align="left" style="font-size:0;line-height:0;">&nbsp;</td>
                                                                                                     <td align="center" valign="middle" width="30" height="30" style="font-size: 0;line-height: 0;border-radius: 100%;" class="main-bg-color"></td>
-                                                                                                        <a class="image_modal_edit" href="https://www.youtube.com/channel/UCSKd_5A0v36U5Bt0y-SDJWg" target="_blank" style="color: #1a1818;text-decoration: none!important;font-size: 2rem;padding: 2px;">
+                                                                                                        <a class="image_modal_edit" href="https://www.youtube.com/channel/UCSKd_5A0v36U5Bt0y-SDJWg" target="_blank" style="color: #ffffff;text-decoration: none!important;font-size: 2rem;padding: 2px;">
                                                                                                             <i class="fab fa-youtube"></i></a>
                                                                                                         <td width="15" align="left" style="font-size:0;line-height:0;">&nbsp;</td>
                                                                                                     <td align="center" valign="middle" width="30" height="30" style="font-size: 0;line-height: 0;border-radius: 100%;" class="main-bg-color"></td>
-                                                                                                        <a class="image_modal_edit" href="https://twitter.com/goEffervescence" target="_blank" style="color: #1f1e1d;text-decoration: none!important;font-size: 2rem;padding: 2px;">
+                                                                                                        <a class="image_modal_edit" href="https://twitter.com/goEffervescence" target="_blank" style="color: #ffffff;text-decoration: none!important;font-size: 2rem;padding: 2px;">
                                                                                                             <i class="fab fa-twitter"></i></a>
                                                                                                             
                                                                                                             <td align="center" valign="middle" width="30" height="30" style="font-size: 0;line-height: 0;border-radius: 100%;" class="main-bg-color"></td>
-                                                                                                            <a class="image_modal_edit" href="https://www.instagram.com/goeffervescence/" target="_blank" style="color: #181616;text-decoration: none!important;font-size: 2rem;padding: 2px;">
+                                                                                                            <a class="image_modal_edit" href="https://www.instagram.com/goeffervescence/" target="_blank" style="color: #ffffff;text-decoration: none!important;font-size: 2rem;padding: 2px;">
                                                                                                                 <i class="fab fa-instagram"></i></a>
                                                                                                             
                                                                                                         <td width="15" align="left" style="font-size:0;line-height:0;">&nbsp;</td>
@@ -891,15 +901,7 @@
                         <!-- ======= Address Ends ====== -->
                         </li>
                         
-                        <li class="ui-sortable-handle">
-                        <table cellpadding="0" cellspacing="0" border="0" class="hide">
-                            <tbody><tr>
-                                <td height="1" class="hide" style="min-width:600px; font-size:0px;line-height:0px;">
-                                    <img height="1" src="images/spacer.png" style="min-width: 600px; text-decoration: none; border: none; -ms-interpolation-mode: bicubic;">
-                                </td>
-                            </tr>
-                        </tbody></table>
-                        </li>
+                       
 					</ul>
                 </td>
             </tr>
